@@ -28,7 +28,7 @@ const FloorRows = ({ floorLabel, elevators, onCall, isWaiting }) => {
         <button
           onClick={onCall}
           disabled={isWaiting}
-          className={`px-5 py-1 rounded-md font-semibold text-white ${
+          className={`px-5 py-1 rounded-md font-semibold text-black ${
             isWaiting
               ? "bg-red-500 cursor-not-allowed"
               : "bg-green-500 hover:bg-green-600"

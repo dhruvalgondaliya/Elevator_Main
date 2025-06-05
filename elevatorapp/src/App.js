@@ -47,12 +47,7 @@ const App = () => {
       const clearedWaiting = [...waiting];
       clearedWaiting[floorIndex] = false;
       setWaiting(clearedWaiting);
-
-      console.log(
-        `Elevator ${closest + 1} reached ${floorNames[floorIndex]} in ${
-          travelTime / 1000
-        }s`
-      );
+      
     }, travelTime);
   };
 
